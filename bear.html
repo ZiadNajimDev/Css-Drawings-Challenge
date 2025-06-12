@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --bg-primary: #916953;
+        --bg-secondary: #fcb5b5;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #a9edda;
+      }
+      .ear,
+      .eye,
+      .face,
+      .inner,
+      .snout,
+      .nose,
+      .bridge,
+      .paci,
+      .mid,
+      .ring {
+        position: absolute;
+      }
+      .bear-container {
+        background-color: #a9edda;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+       
+      }
+
+      .face {
+        width: 160px;
+        height: 150px;
+        background: var(--bg-primary);
+        border-radius: 50%;
+        top: 25px;
+        left: 20px;
+      }
+
+      .ear {
+        width: 70px;
+        height: 70px;
+        background: var(--bg-primary);
+        border-radius: 50%;
+        top: 20px;
+        left: 20px;
+      }
+
+      .ear.right {
+        transform: translateX(95px);
+      }
+      .inner {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--bg-secondary);
+        top: 7px;
+        left: 6px;
+      }
+      .inner.right {
+        left: 10px;
+        top: 8px;
+      }
+      .eye {
+        width: 8px;
+        height: 8px;
+        background: black;
+        border-radius: 100%;
+        top: 85px;
+        left: 55px;
+      }
+
+      .eye.right {
+        transform: translateX(53px);
+      }
+      .snout {
+        width: 40px;
+        height: 35px;
+        border-radius: 50%;
+        background: #fdcfcf;
+        top: 100px;
+        left: 68px;
+      }
+      .nose {
+        width: 10px;
+        height: 6px;
+        background: #333;
+        border-radius: 50%;
+        top: 4px;
+        left: 13px;
+      }
+      .bridge {
+        width: 2px;
+        height: 8px;
+        background: #333;
+        top: 8px;
+        left: 17px;
+      }
+      .paci {
+        width: 20px;
+        height: 14px;
+        background: #7fb7be;
+        border-radius: 20px;
+        top: 15px;
+        left: 9px;
+      }
+      .mid {
+        width: 10px;
+        height: 10px;
+        background: #f05d5e;
+        border-radius: 100%;
+        top: 2px;
+        left: 5px;
+      }
+      .ring {
+        width: 10px;
+        height: 10px;
+        background: transparent ;
+        border: 1px solid #f05d5e;
+        border-radius: 100%;
+        top: 5px;
+        left: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bear-container">
+      <div class="ear">
+        <div class="inner"></div>
+      </div>
+      <div class="ear right">
+        <div class="inner right"></div>
+      </div>
+      <div class="face">
+        <div class="eye"></div>
+        <div class="eye right"></div>
+        <div class="snout">
+          <div class="nose"></div>
+          <div class="bridge"></div>
+          <div class="mouth"></div>
+          <div class="paci">
+            <div class="mid"></div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
