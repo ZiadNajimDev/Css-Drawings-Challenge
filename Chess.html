@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     body {
+        font-family: Helvetica;
+        color: #FFE8DE;
+        background: radial-gradient(
+    125% 125% at -2% 101%,
+    rgba(245, 87, 2, 1) 10.5%,
+    rgba(245, 120, 2, 1) 16%,
+    rgba(245, 140, 2, 1) 17.5%,
+    rgba(245, 170, 100, 1) 25%,
+    rgba(238, 174, 202, 1) 40%,
+    rgba(202, 179, 214, 1) 65%,
+    rgba(148, 201, 233, 1) 100%
+  );
+     }
+     .chessboard {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 30px repeat(8, 60px) 30px;
+        grid-template-rows: 30px repeat(8, 60px) 30px;
+        gap: 0;
+        justify-content: center;
+        align-content: center;
+     }
+     .square {
+        width: 60px;
+        height: 60px;
+     }
+     .dark {
+    font-size: 45px;
+     background: #732E11;
+     display: flex;
+        justify-content: center;
+        align-items: center;
+     
+     }
+     .light {
+        color: #732E11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       font-size: 45px;
+      background: #FFE8DE;
+    
+     }
+     .border {
+    background: #38180B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <div class="chessboard">
+        <div class="border"></div> <div class="border">A</div><div class="border">B</div><div class="border">C</div><div class="border">D</div><div class="border">E</div><div class="border">F</div><div class="border">G</div><div class="border">H</div><div class="border"></div>
+        
+        <div class="border">8</div> <div class="light square">♜</div>  <div class="dark square">♞</div>  <div class="light square">♝</div>  <div class="dark square">♛</div> <div class="light square">♚</div>  <div class="dark square">♝</div> <div class="light square">♞</div>  <div class="dark square">♜</div><div class="border">8</div> 
+        <div class="border">7</div> <div class="dark square">♟</div>  <div class="light square">♟</div> <div class="dark square">♟</div>  <div class="light square">♟</div> <div class="dark square">♟</div>  <div class="light square">♟</div> <div class="dark square">♟</div>  <div class="light square">♟</div><div class="border">7</div> 
+        <div class="border">6</div> <div class="light square"></div>  <div class="dark square"></div>  <div class="light square"></div>  <div class="dark square"></div> <div class="light square"></div>  <div class="dark square"></div> <div class="light square"></div>  <div class="dark square"></div><div class="border">6</div> 
+        <div class="border">5</div>  <div class="dark square"></div>  <div class="light square"></div> <div class="dark square"></div>  <div class="light square"></div> <div class="dark square"></div>  <div class="light square"></div> <div class="dark square"></div>  <div class="light square"></div><div class="border">5</div> 
+        <div class="border">4</div> <div class="light square"></div>  <div class="dark square"></div>  <div class="light square"></div>  <div class="dark square"></div> <div class="light square"></div>  <div class="dark square"></div> <div class="light square"></div>  <div class="dark square"></div><div class="border">4</div> 
+        <div class="border">3</div> <div class="dark square"></div>  <div class="light square"></div> <div class="dark square"></div>  <div class="light square"></div> <div class="dark square"></div>  <div class="light square"></div> <div class="dark square"></div>  <div class="light square"></div><div class="border">3</div> 
+        <div class="border">2</div>  <div class="light square">♙</div>  <div class="dark square">♙</div>  <div class="light square">♙</div>  <div class="dark square">♙</div> <div class="light square">♙</div>  <div class="dark square">♙</div> <div class="light square">♙</div>  <div class="dark square">♙</div><div class="border">2</div> 
+        <div class="border">1</div> <div class="dark square">♖</div>  <div class="light square">♘</div> <div class="dark square">♗</div>  <div class="light square">♕</div> <div class="dark square">♔</div>  <div class="light square">♗</div> <div class="dark square">♘</div>  <div class="light square">♖
+        </div><div class="border">1</div> 
+        <div class="border"></div> <div class="border">A</div><div class="border">B</div><div class="border">C</div><div class="border">D</div><div class="border">E</div><div class="border">F</div><div class="border">G</div><div class="border">H</div><div class="border"></div>
+    </div>
+</body>
+</html>
