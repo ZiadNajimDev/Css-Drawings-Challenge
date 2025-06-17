@@ -18,7 +18,9 @@ A collection of CSS drawings created to practice and demonstrate various CSS tec
 - Structuring elements efficiently for grid-based designs.
 
 ### 3. Calendar
-Working on it. 
 
+**Lessons Learned:**
+- Learned more about box Shadow with `inset`
+- learned about ::before ::after pseudo-Classes 
 ---
 
