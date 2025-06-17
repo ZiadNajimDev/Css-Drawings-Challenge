@@ -21,6 +21,6 @@ A collection of CSS drawings created to practice and demonstrate various CSS tec
 
 **Lessons Learned:**
 - Learned more about `box Shadow` with `inset`
-- learned about `::before` `::after1` pseudo-Classes 
+- learned about `::before` `::after` pseudo-Classes 
 ---
 
