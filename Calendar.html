@@ -1,0 +1,54 @@
+<!-- calendar-shadow-breakdown.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calendar Shadow Breakdown</title>
+    <style>
+      html {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      body {
+        background: lightpink;
+      }
+      .calendar {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 30px;
+        background: #fff;
+        display: inline-block;
+        position: relative;
+      }
+      .calendar::before {
+        position: absolute;
+        content: "19";
+        top: 60%;
+        font-family: "Roboto", sans-serif;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+      }
+      .calendar::after {
+        position: absolute;
+        content: "Jan";
+        font-family: "Roboto", sans-serif;
+        color: white;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+      }
+      .styles {
+        box-shadow: inset 0 50px 0 #ce5f5f, inset 0 -3px 5px grey,
+          0 5px 5px #282828, 7px 10px 0 #858f99, -7px 10px 0 #858f99;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calendar styles"></div>
+  </body>
+</html>
