@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #8f8f8f;
+      }
+      html {
+        overflow: hidden;
+      }
+      .buttons {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+      }
+      .button-container {
+        width: 100px;
+        height: 100px;
+        background: #8f8f8f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+      }
+      .btn {
+        width: 20px;
+        height: 17px;
+        background: #ff5a78;
+        border: 0.5px solid #98343e;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: inset 0 -1px 2px #d54a60;
+        transition: transform 0.3s ease;
+      }
+      .btn2 {
+        width: 20px;
+        height: 17px;
+        position: absolute;
+        border-radius: 50%;
+        border: none;
+        top: 50%;
+        left: 50%;
+        bottom: 0;
+        right: 0;
+        transform: translate(-50%, -30%);
+        background: #96323c;
+        z-index: -1;
+      }
+      .btn1 {
+        width: 40px;
+        height: 35px;
+        position: absolute;
+        border-radius: 50%;
+        border: none;
+        top: 50%;
+        left: 50%;
+        bottom: 0;
+        right: 0;
+        transform: translate(-50%, -40%);
+        background: #f09dab;
+        z-index: -2;
+      }
+      .btn:active {
+        transform: translateY(3px);
+        z-index: 2;
+      }
+      .btn.orange {
+        background: #ffab91;
+        border: 0.5px solid #ca3a0e;
+        box-shadow: inset 0 -1px 5px rgb(233, 75, 12);
+      }
+
+      .btn2.orange {
+        background: #c25331;
+      }
+
+      .btn1.orange {
+        background: #ff7043;
+      }
+      .btn.green {
+        background: #a8e6cf;
+        border: 0.5px solid #357a61;
+        box-shadow: inset 0 -1px 5px #357a61;
+      }
+
+      .btn2.green {
+        background: #246e4f;
+      }
+
+      .btn1.green {
+        background: #379683;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 500px;
+      }
+      .traffic-light {
+        position: relative;
+        width: 150px;
+        height: 400px;
+        background: #333333;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        gap: 1rem;
+      }
+      .light {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 5px solid #222222;
+      }
+      .red-light {
+        background: #880000;
+        box-shadow: inset -2px -3px 10px #490404, inset 2px 3px 5px #490404;
+      }
+      .orange-light {
+        background: #878800;
+        box-shadow: inset -2px -3px 7px #424204, inset 2px 3px 5px #424204;
+      }
+      .green-light {
+        background: #44ff44;
+      }
+      .green-shadow {
+        box-shadow: -2px -3px 10px 10px #44ff44, 2px 3px 10px #44ff44;
+      }
+      .red-shadow {
+        background: red;
+        box-shadow: -2px -3px 10px 10px #fd1b1b, 2px 3px 10px #fd1b1b;
+      }
+      .orange-shadow {
+        background: orange;
+        box-shadow: -2px -3px 10px 10px #ff781e, 2px 3px 10px #ff781e;
+      }
+      .traffic-pole {
+        height: 200px;
+        width: 50px;
+        background: #333333;
+        position: absolute;
+        top: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="traffic-light">
+        <div class="light red-light" id="red-light"></div>
+        <div class="light orange-light" id="orange-light"></div>
+        <div class="light green-light" id="green-light"></div>
+        <div class="traffic-pole"></div>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="button-container">
+        <button class="btn1"></button>
+        <button class="btn" id="red-btn" onclick="redShadow()"></button>
+        <button class="btn2"></button>
+      </div>
+      <div class="button-container">
+        <button class="btn1 orange"></button>
+        <button
+          class="btn orange"
+          id="orange-btn"
+          onclick="orangeShadow()"
+        ></button>
+        <button class="btn2 orange"></button>
+      </div>
+      <div class="button-container">
+        <button class="btn1 green"></button>
+        <button
+          class="btn green"
+          id="green-btn"
+          onclick="greenShadow()"
+        ></button>
+        <button class="btn2 green"></button>
+      </div>
+    </div>
+    <script>
+      const element = document.getElementById("green-light");
+      const element1 = document.getElementById("orange-light");
+      const element2 = document.getElementById("red-light");
+      const greenShadow = () => {
+        if (
+          element1.classList.contains("orange-shadow") ||
+          element2.classList.contains("red-shadow")
+        ) {
+          element1.classList.remove("orange-shadow");
+          element2.classList.remove("red-shadow");
+        }
+        element.classList.toggle("green-shadow");
+      };
+      const orangeShadow = () => {
+        if (
+          element.classList.contains("green-shadow") ||
+          element2.classList.contains("red-shadow")
+        ) {
+          element.classList.remove("green-shadow");
+          element2.classList.remove("red-shadow");
+        }
+        element1.classList.toggle("orange-shadow");
+      };
+      const redShadow = () => {
+        if (
+          element.classList.contains("green-shadow") ||
+          element1.classList.contains("orange-shadow")
+        ) {
+          element.classList.remove("green-shadow");
+          element1.classList.remove("orange-shadow");
+        }
+        element2.classList.toggle("red-shadow");
+      };
+    </script>
+  </body>
+</html>
