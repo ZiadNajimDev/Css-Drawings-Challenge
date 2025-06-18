@@ -16,13 +16,23 @@ A collection of CSS drawings created to practice and demonstrate various CSS tec
 **Lessons Learned:**
 - Layouts using CSS Grid.
 - Structuring elements efficiently for grid-based designs.
-#demo: https://ziadnajimdev.github.io/Css-Drawings-Challenge/Chess.html
+#demo: 
+https://ziadnajimdev.github.io/Css-Drawings-Challenge/Chess.html
 
 ### 3. Calendar
 
 **Lessons Learned:**
 - Learned more about `box Shadow` with `inset`
 - learned about `::before` `::after` pseudo-Classes
-#demo: https://ziadnajimdev.github.io/Css-Drawings-Challenge/Calendar.html
+#demo:
+ https://ziadnajimdev.github.io/Css-Drawings-Challenge/Calendar.html
+### 3. Traffic Light
+
+**Lessons Learned:**
+- mainly focused to get confortable with box shadow
+- cheated a bit with some Javascript for interactivity.
+#demo:
+ https://ziadnajimdev.github.io/Css-Drawings-Challenge/trafficLight.html
+
 ---
 
