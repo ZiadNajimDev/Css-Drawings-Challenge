@@ -29,7 +29,7 @@ https://ziadnajimdev.github.io/Css-Drawings-Challenge/Chess.html
 ### 3. Traffic Light
 
 **Lessons Learned:**
-- mainly focused to get confortable with box shadow
+- mainly focused on getting confortable with box shadow
 - cheated a bit with some Javascript for interactivity.
 #demo:
  https://ziadnajimdev.github.io/Css-Drawings-Challenge/trafficLight.html
