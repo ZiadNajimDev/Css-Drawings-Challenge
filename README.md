@@ -26,7 +26,7 @@ https://ziadnajimdev.github.io/Css-Drawings-Challenge/Chess.html
 - learned about `::before` `::after` pseudo-Classes
 #demo:
  https://ziadnajimdev.github.io/Css-Drawings-Challenge/Calendar.html
-### 3. Traffic Light
+### 4. Traffic Light
 
 **Lessons Learned:**
 - mainly focused on getting confortable with box shadow
